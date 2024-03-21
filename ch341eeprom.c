@@ -29,7 +29,7 @@
 #include "ch341eeprom.h"
 
 FILE *debugout, *verbout;
-uint8_t *readbuf = NULL;
+static uint8_t *readbuf = NULL;
 
 int main(int argc, char **argv) {
     int i, ret = 0, eepromsize = 0, bytesread = 0;
