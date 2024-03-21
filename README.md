@@ -1,42 +1,42 @@
 
-About   
+About
 =====
 
-	Beta libusb code for EEPROM programmers based on the WinChipHead CH341a IC
+    Beta libusb code for EEPROM programmers based on the WinChipHead CH341a IC
 
 Author
 ======
 
-	Written by asbokid and released under the terms of the GNU GPL, version 3, or later.
-	
-	Copyright Dec 2011, asbokid <ballymunboy@gmail.com>
+    Written by asbokid and released under the terms of the GNU GPL, version 3, or later.
+
+    Copyright Dec 2011, asbokid <ballymunboy@gmail.com>
 
 Licence
 =======
 
-	This is free software: you can redistribute it and/or modify it under the terms of
-	the latest GNU General Public License as published by the Free Software Foundation.
+    This is free software: you can redistribute it and/or modify it under the terms of
+    the latest GNU General Public License as published by the Free Software Foundation.
 
-	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
-	without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-	See the GNU General Public License for more details.
+    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+    without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    See the GNU General Public License for more details.
 
-	You should have received a copy of the GNU General Public License along with this program.
-	If not, see <http://www.gnu.org/licenses/>.
+    You should have received a copy of the GNU General Public License along with this program.
+    If not, see <http://www.gnu.org/licenses/>.
 
 Requires
 ========
 
-	gcc
-	GNU make
-	libusb-1.0 and the libusb library development files. See http://libusb.wiki.sourceforge.net/
+    gcc
+    GNU make
+    libusb-1.0 and the libusb library development files. See http://libusb.wiki.sourceforge.net/
     libusb-1.0-dev  (on debian-based distros)
 
 Compiling
 =========
 
-	gcc -o ch341eeprom ch341eeprom.c ch341funcs.c -lusb-1.0
-		
+    gcc -o ch341eeprom ch341eeprom.c ch341funcs.c -lusb-1.0
+
 Running
 =======
 
@@ -45,7 +45,7 @@ Running
     ch341eeprom - an i2c EEPROM programming tool for the WCH CH341a IC
     Version 0.5 copyright (c) 2011  asbokid <ballymunboy@gmail.com>
 
-    This program comes with asbolutely no warranty; This is free software,
+    This program comes with absolutely no warranty; This is free software,
     and you are welcome to redistribute it under certain conditions:
     GNU GPL v3 License: http://www.gnu.org/licenses/gpl.html
 
@@ -109,7 +109,7 @@ Running
     0000060: 6666 6666 6666 6666 6666 6666 6666 6666  ffffffffffffffff
     0000070: 7777 7777 7777 7777 7777 7777 7777 7777  wwwwwwwwwwwwwwww
 
-	asbokid@u50si1:$ sudo ./ch341eeprom -v -s 24c64 -w testimg24c64.bin 
+    asbokid@u50si1:$ sudo ./ch341eeprom -v -s 24c64 -w testimg24c64.bin 
 
     Searching USB buses for WCH CH341a i2c EEPROM programmer [1a86:5512]
     Found [1a86:5512] as device [7] on USB bus [2]
@@ -147,12 +147,12 @@ Running
     0000070: 7777 7777 7777 7777 7777 7777 7777 7777  wwwwwwwwwwwwwwww
 
 
-Concluding Notes	
+Concluding Notes
 ================
 
     The code handles the 3 byte addressing used by EEPROMS of 32kbit and greater (24c32-)
     It uses asynchronous USB transfers but should be portable to Microsoft Windows.
 
-	All comments and contributions welcomed!
-	
-	asbokid <ballymunboy@gmail.com> - Dec 2011
+    All comments and contributions welcomed!
+
+    asbokid <ballymunboy@gmail.com> - Dec 2011
